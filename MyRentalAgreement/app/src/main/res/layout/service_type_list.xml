@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_10">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/property_service_type_msg"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/padding_10" />
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:padding="@dimen/padding_10">
+
+        <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/service_type_icon_1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:srcCompat="@drawable/fiber_new"/>
+
+        <TextView
+            android:id="@+id/service_type_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/property_service_1"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/black"
+            android:paddingLeft="12dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_10"
+        android:foreground="?attr/selectableItemBackground">
+
+        <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/service_type_icon_2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:srcCompat="@drawable/timelapse"/>
+
+        <TextView
+            android:id="@+id/service_type_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/property_service_2"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/black"
+            android:paddingLeft="12dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_10"
+        android:foreground="?attr/selectableItemBackground">
+
+        <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/service_type_icon_3"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:srcCompat="@drawable/verified"/>
+
+        <TextView
+            android:id="@+id/service_type_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/property_service_3"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"
+            android:paddingLeft="12dp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:textAlignment="center"
+        android:background="@drawable/btn_border"
+        android:layout_gravity="right"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="@dimen/padding_10"/>
+
+</LinearLayout>

@@ -1,0 +1,370 @@
+<resources>
+    <string name="app_name">My Rental Agreement</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+
+    <!-- My Strings -->
+
+    <!-- Main Dashboard -->
+    <string name="dashboard">Dashboard</string>
+    <string name="about_us">About Us</string>
+    <string name="create_agreement">Create Agreement</string>
+    <string name="schedule_appointment">Schedule Appointment</string>
+    <string name="send_msg">Send Message</string>
+    <string name="website">Website</string>
+
+
+    <!-- Navigation Bar -->
+    <!-- Toolbar titles when navigation menu item is selected   (USER SIDE) -->
+    <string-array name="nav_items_titles">
+
+        <item>Home</item>
+        <item>Create Agreement</item>
+        <item>Schedule Appointment</item>
+        <item>Send Message</item>
+        <item>About Us</item>
+        <item>Contact Us</item>
+
+        <item>Logout</item>
+
+    </string-array>
+
+
+    <!-- Labels -->
+    <string name="lbl_owner_details">Owner Details</string>
+    <string name="lbl_owner_document_details">Owner Document Details</string>
+
+    <string name="lbl_tenant_details">Tenant Details</string>
+    <string name="lbl_tenant_document_details">Tenant Document Details</string>
+
+    <string name="lbl_witness1_details">Witness-1 Details</string>
+    <string name="lbl_witness1_document_details">Witness-1 Document Details</string>
+
+    <string name="lbl_witness2_details">Witness-2 Details</string>
+    <string name="lbl_witness2_document_details">Witness-2 Document Details</string>
+
+    <string name="lbl_witness_details">Witness Details</string>
+
+    <string name="lbl_agent_details">Agent Details</string>
+    <string name="lbl_agent_document_details">Agent Document Details</string>
+
+    <string name="lbl_broker_details">Broker Details</string>
+    <string name="lbl_broker_document_details">Broker Document Details</string>
+
+    <string name="lbl_others_details">Others Details</string>
+
+    <string name="lbl_property_details">Property Details</string>
+    <string name="lbl_property_document_details">Property Document Details</string>
+
+    <string name="lbl_payment_details">Payment Details</string>
+
+    <string name="dots">...</string>
+
+    <string name="completed">Completed</string>
+    <string name="incomplete">Not Complete</string>
+    <string name="report_download">Download Report</string>
+    <string name="report_download_disable">Cann\'t Download Report</string>
+
+    <string name="lbl_rent_details">Rent Payment Details</string>
+
+    <string name="lbl_rent_trans_details">Agreement Payment Details</string>
+
+    <string name="one">1. </string>
+    <string name="two">2. </string>
+    <string name="three">3. </string>
+    <string name="four">4. </string>
+    <string name="five">5. </string>
+    <string name="six">6. </string>
+
+
+    <!-- Actions -->
+    <string name="action_logout">Logout</string>
+    <string name="action_login">Login</string>
+    <string name="action_signup">Sign Up</string>
+    <string name="action_register">Register</string>
+
+    <string name="action_forgot_pwd">Forgot your login details?</string>
+
+
+    <string name="property_service_type">Property Service Types</string>
+    <string name="property_service_type_msg">Select Property Service Type</string>
+
+    <string-array name="property_service_types">
+        <item>Create new agreement</item>
+        <item>Create immediate agreement</item>
+        <item>Create notary agreement</item>
+    </string-array>
+
+    <string name="property_service_1">Create New Agreement</string>
+    <string name="property_service_2">Create Immediate Agreement</string>
+    <string name="property_service_3">Create Notary Agreement</string>
+
+    <string-array name="property_type">
+        <item>Apartment</item>
+        <item>Flat</item>
+        <item>Shop</item>
+        <item>Godown</item>
+        <item>Room</item>
+    </string-array>
+
+    <string-array name="profession_lists">
+        <item>Salaried</item>
+        <item>Business</item>
+        <item>Retired</item>
+        <item>Housewife</item>
+    </string-array>
+
+    <string-array name="user_types">
+        <item>Owner</item>
+        <item>Tenant</item>
+        <item>Agent</item>
+        <item>Broker</item>
+        <item>Employee</item>
+    </string-array>
+
+    <string-array name="co_num">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="rent_trans">
+        <item>Complete (2499)</item>
+        <item>Token (999)</item>
+        <item>Portal (1250)</item>
+    </string-array>
+
+
+    <string name="agm_success">Your Agreement is Successfully Created.</string>
+    <string name="token_msg">Your Token ID is </string>
+    <string name="thnk">Thanks for showing interest in us. </string>
+
+    <string-array name="dashboard_list">
+        <item>Property</item>
+        <item>Owner</item>
+        <item>Tenant</item>
+        <item>Witness</item>
+        <item>Payment</item>
+    </string-array>
+
+    <string name="property">Property</string>
+    <string name="owner">Owner</string>
+    <string name="tenant">Tenant</string>
+    <string name="witness">Witness</string>
+    <string name="payment">Payment</string>
+    <string name="report">Report</string>
+
+    <string name="edt_data">Edit Data</string>
+    <string name="edt_data_msg">Do you want to edit data?</string>
+
+    <string name="confirm_exit">Exit</string>
+    <string name="confirm_msg">Are you sure want to exit?</string>
+    <string name="confirm_yes">Yes</string>
+    <string name="confirm_cancel">Cancel</string>
+
+    <string name="msg">Message</string>
+    <string name="msg_data">You can not edit data after successful transaction.</string>
+
+    <string name="back_btn">Go to Dashboard</string>
+    <string name="back_button_dashboard_msg">Plz, Press \"Go to Dashboard\" Button</string>
+
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+
+
+    <string name="lbl_home">Home</string>
+    <string name="lbl_create_agreement">Create Agreement</string>
+    <string name="lbl_view_agreement">View Agreement</string>
+    <string name="lbl_pending_agreement">Pending Agreement</string>
+    <string name="lbl_my_account">My Account</string>
+    <string name="lbl_notification">Notification</string>
+    <string name="lbl_setting">Setting</string>
+    <string name="lbl_about_us">About Us</string>
+    <string name="lbl_our_services">Our Services</string>
+    <string name="lbl_rate_app">Rate App</string>
+    <string name="lbl_recommend_app">Recommend App</string>
+    <string name="lbl_contact">Contact</string>
+    <string name="lbl_social_media">Social Media</string>
+    <string name="lbl_legal_notice">Legal Notice</string>
+    <string name="lbl_logout">Logout</string>
+
+    <string-array name="nav_items_usrs_activity_titles">
+
+        <!-- My Navigation Menu Item -->
+        <item>Home</item>
+        <item>Create Agreement</item>
+        <item>View Agreement</item>
+        <item>Pending Agreement</item>
+        <item>My Account</item>
+        <item>About Us</item>
+        <!--<item>Our Services</item>-->
+        <item>Contact</item>
+        <item>Rate App</item>
+        <item>Recommend App</item>
+        <item>Social Media</item>
+        <item>Legal Notice</item>
+        <item>Logout</item>
+
+    </string-array>
+
+    <string name="title_activity_user_nav">UserNavActivity</string>
+    <!--<string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>-->
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <string name="activity_title_about_us">About Us</string>
+    <string name="activity_title_privacy_policy">Privacy Policy</string>
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="terms_of_use_header">Terms of Use</string>
+    <string name="terms_of_use_content">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+
+        Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+
+        Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.
+
+        Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+    </string>
+
+    <string name="privacy_policy_header">Privacy Policy</string>
+    <string name="privacy_policy_content">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+
+        Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+
+        Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.
+
+        Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+    </string>
+
+    <string name="social_media_connect">Connect with us</string>
+
+    <string name="address">Sardar Patel Institute of Technology, Bhavan’s Campus, Munshi Nagar, Andheri (West), Mumbai 400 058</string>
+
+    <string-array name="phone_list">
+        <item>+9102226707440</item>
+        <item>+9102226287250</item>
+    </string-array>
+
+    <string name="phone1">(+91)-(022)-26707440</string>
+    <string name="phone2">(+91)-(022)-26287250</string>
+
+    <string name="phone_title">Select Phone Number</string>
+
+    <string name="app_version">Version: </string>
+
+    <string name="no_notification">No Notification</string>
+
+    <string name="facebook">Facebook</string>
+    <string name="google_plus">Google+</string>
+    <string name="twitter">Twitter</string>
+    <string name="youtube">Youtube</string>
+    <string name="linkedin">Linkedin</string>
+    <string name="whatsapp">Whatsapp</string>
+
+    <string name="agm_id">Agreement ID : </string>
+    <string name="agm_status">Status : </string>
+    <string name="agm_status_completed">Completed</string>
+    <string name="agm_status_incomplete">Incomplete</string>
+
+    <string name="preview_agm">Preview</string>
+
+    <string name="warning_title">Warning Message</string>
+
+    <string name="nil">NIL</string>
+
+    <string name="edit_agm">Edit</string>
+    <string name="no_pending">No Pending Agreement</string>
+
+    <string name="incomplete_msg">You have incomplete agreement form. Complete them first.</string>
+
+    <string name="no_agm">No Agreements are created.</string>
+
+    <string name="more_info">know more about us!</string>
+
+    <string name="logout_title">Logout</string>
+    <string name="logout_msg">Are sure want to Logout?</string>
+</resources>

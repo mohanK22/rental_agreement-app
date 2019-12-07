@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "68874659199",
+    "firebase_url": "https://myrentalagreement-7f831.firebaseio.com",
+    "project_id": "myrentalagreement-7f831",
+    "storage_bucket": "myrentalagreement-7f831.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:68874659199:android:6d9e4fc71065e927",
+        "android_client_info": {
+          "package_name": "in.aartimkarande.rentalagreement.myrentalagreement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "68874659199-0qjmitrg3s5uf071i720f5k7q6otpg5b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.aartimkarande.rentalagreement.myrentalagreement",
+            "certificate_hash": "2b19be9d8f3276ff295284e8c5983eb9da59c968"
+          }
+        },
+        {
+          "client_id": "68874659199-iat1ksk0kfs75bsnppt27d85blumjpli.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsZmJcaNHqht-VcsQv8mHmC6-dC8P4hzI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "68874659199-iat1ksk0kfs75bsnppt27d85blumjpli.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

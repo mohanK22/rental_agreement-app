@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+-->
+
+    <color name="colorPrimary">#4fc3f7</color>
+    <color name="colorPrimaryDark">#0093c4</color>
+    <color name="colorAccent">#0267C1</color>
+
+    <color name="primaryLightColor">#4fc3f7</color>
+    <color name="light_grey">#f7f7f7</color>
+
+    <color name="red">#FF0000</color>
+    <color name="dark_red">#d50000</color>
+    <color name="green">#008000</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="lightBlack">#2a2a2a</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="placeholder_bg">#dddddd</color>
+    <color name="item_name">#0c0c0c</color>
+    <color name="description">#1a1a1a</color>
+    <color name="chef">#777</color>
+    <color name="timestamp">#777</color>
+
+</resources>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="in.aartimkarande.rentalagreement.myrentalagreement">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".config.MyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/contract"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/contract"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:ignore="GoogleAppIndexingWarning">
+        <provider
+            android:name=".handler.GenericFileProvider"
+            android:authorities="${applicationId}.my.package.name.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".property.PropertyActivity"
+            android:theme="@style/AppTheme"
+            android:label="Property Details"/>
+        <activity android:name=".property.EditPropertyActivity"
+            android:theme="@style/AppTheme"
+            android:label="Update Property Detail"/>
+        <activity android:name=".property.ViewPropertyActivity"
+            android:theme="@style/AppTheme"
+            android:label="View Property Detail"/>
+        <activity android:name=".user_owner.OwnerActivity"
+            android:theme="@style/AppTheme"
+            android:label="Owner Detail"/>
+        <activity android:name=".user_owner.EditOwnerActivity"
+            android:theme="@style/AppTheme"
+            android:label="Update Owner Details"/>
+        <activity android:name=".user_owner.ViewOwnerActivity"
+            android:theme="@style/AppTheme"
+            android:label="View Owner Details"/>
+        <activity android:name=".user_tenant.TenantActivity"
+            android:theme="@style/AppTheme"
+            android:label="Tenant Details"/>
+        <activity android:name=".user_tenant.EditTenantActivity"
+            android:theme="@style/AppTheme"
+            android:label="Update Tenant Details"/>
+        <activity android:name=".user_tenant.ViewTenantActivity"
+            android:theme="@style/AppTheme"
+            android:label="View Tenant Details"/>
+        <activity android:name=".user_witness1.Witness1Activity"
+            android:theme="@style/AppTheme"
+            android:label="Witness-1 Details"/>
+        <activity android:name=".user_witness1.EditWitness1Activity"
+            android:theme="@style/AppTheme"
+            android:label="Update Witness-1 Details"/>
+        <activity android:name=".user_witness1.ViewWitness1Activity"
+            android:theme="@style/AppTheme"
+            android:label="View Witness-1 Details"/>
+        <activity android:name=".user_witness2.Witness2Activity"
+            android:theme="@style/AppTheme"
+            android:label="Witness-2 Details"/>
+        <activity android:name=".user_witness2.EditWitness2Activity"
+            android:theme="@style/AppTheme"
+            android:label="Update Witness-2 Details"/>
+        <activity android:name=".user_witness2.ViewWitness2Activity"
+            android:theme="@style/AppTheme"
+            android:label="View Witness-2 Details"/>
+        <activity android:name=".property.UploadPropertyActivity" />
+        <activity android:name=".user_owner.UploadOwnerActivity" />
+        <activity android:name=".user_tenant.UploadTenantActivity" />
+        <activity android:name=".user_witness1.UploadWitness1Activity" />
+        <activity android:name=".user_witness2.UploadWitness2Activity" />
+        <activity android:name=".transaction.RentPaymentActivity"
+            android:theme="@style/AppTheme"
+            android:label="Rent Payment Details"/>
+        <activity android:name=".transaction.AgreementPaymentActivity"
+            android:theme="@style/AppTheme"
+            android:label="Agreement Payment Details"/>
+        <activity android:name=".status_activity.FourActivity"
+            android:theme="@style/AppTheme"
+            android:label="Status"/>
+        <activity android:name=".status_activity.FiveActivity"
+            android:theme="@style/AppTheme"
+            android:label="Status"/>
+        <activity android:name=".status_activity.SixActivity"
+            android:theme="@style/AppTheme"
+            android:label="Status"/>
+        <activity android:name=".status_activity.AgreementSuccessActivity"
+            android:theme="@style/AppTheme"
+            android:label="Agreement Success"/>
+        <activity android:name=".activity.DashboardActivity" />
+        <activity android:name=".transaction.ViewRentPaymentActivity"
+            android:theme="@style/AppTheme"
+            android:label="View Rent Payment"/>
+        <activity android:name=".transaction.EditRentPaymentActivity"
+            android:theme="@style/AppTheme"
+            android:label="Update Rent Payment"/>
+        <activity android:name=".activity.AboutUsActivity" />
+        <activity android:name=".activity.CreateAgreementDashboardActivity"
+            android:theme="@style/AppTheme"
+            android:label="Create Agreement"/>
+        <activity android:name=".activity.ScheduleAppointmentActivity" />
+        <activity android:name=".activity.SendMsgActivity" />
+        <activity android:name=".transaction.ViewAgreementPaymentActivity"
+            android:theme="@style/AppTheme"
+            android:label="View Agreement Payment"/>
+        <activity android:name=".activity.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".intro_slides.IntroductionSlidesActivity" />
+        <activity android:name=".menus.AppBarActivity" />
+        <activity android:name=".activity.UserMainActivity" />
+        <activity android:name=".intro_slides.YouTubeClipActivity" />
+        <activity android:name=".admin.AdminMainActivity"
+            android:theme="@style/AppTheme"
+            android:label="Dashboard"/>
+        <activity android:name=".admin.UsersListsActivity"
+            android:theme="@style/AppTheme"
+            android:label="User Lists"/>
+        <activity android:name=".admin.AgreementListsActivity"
+            android:theme="@style/AppTheme"
+            android:label="Agreement List"/>
+        <activity android:name=".admin.UserDataActivity"
+            android:theme="@style/AppTheme"
+            android:label="User Detail"/>
+        <activity android:name=".admin.ViewAgmInfoActivity"
+            android:theme="@style/AppTheme"
+            android:label="Agreement Info"/>
+        <activity android:name=".admin.AdminInfoActivity"
+            android:theme="@style/AppTheme"
+            android:label="Admin Data"/>
+        <activity android:name=".admin.UpdateAdminNameActivity" />
+        <activity android:name=".admin.UpdateAdminPwdActivity"
+            android:theme="@style/AppTheme"
+            android:label="Change Password"/>
+        <activity android:name=".admin.AgmDataActivity"
+            android:theme="@style/AppTheme"
+            android:label="Agreement Details"/>
+        <activity android:name=".admin.PropertyDataActivity"
+            android:theme="@style/AppTheme"
+            android:label="View Property Details"/>
+        <activity android:name=".admin.OwnerDataActivity"
+            android:theme="@style/AppTheme"
+            android:label="View Owner Details"/>
+        <activity android:name=".admin.TenantDataActivity"
+            android:theme="@style/AppTheme"
+            android:label="View Tenant Details"/>
+        <activity android:name=".admin.WitnessDataActivity"
+            android:theme="@style/AppTheme"
+            android:label="View Witness Details"/>
+        <activity android:name=".admin.PaymentDataActivity"
+            android:theme="@style/AppTheme"
+            android:label="View Payment Details" />
+    </application>
+
+
+</manifest>

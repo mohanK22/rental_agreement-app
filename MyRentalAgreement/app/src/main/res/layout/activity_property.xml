@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollview_layout"
+    android:background="@color/white"
+    tools:context=".property.PropertyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/default_value">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_ip_property_nameBldg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_property_nameBldg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name of Bldg/Apt"
+                android:inputType="text|textCapWords"
+                android:textColor="@color/lightBlack" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_ip_property_flatNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_property_flatNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Flat No / Plot No"
+                android:inputType="number"
+                android:textColor="@color/lightBlack" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_ip_property_floorNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_property_floorNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Floor No"
+                android:inputType="number"
+                android:textColor="@color/lightBlack" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_ip_property_road"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_property_road"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Road"
+                android:inputType="text|textCapWords"
+                android:textColor="@color/lightBlack" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_ip_property_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_property_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Area"
+                android:inputType="text|textCapWords"
+                android:textColor="@color/lightBlack" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_ip_property_suburban"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_property_suburban"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Suburban"
+                android:inputType="text|textCapWords"
+                android:textColor="@color/lightBlack" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_ip_property_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_property_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="City"
+                android:inputType="text|textCapWords"
+                android:textColor="@color/lightBlack" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_ip_property_taluka"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_property_taluka"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Taluka"
+                android:inputType="text|textCapWords"
+                android:textColor="@color/lightBlack" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_ip_property_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_property_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="State"
+                android:inputType="text|textCapWords"
+                android:textColor="@color/lightBlack" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_ip_property_pincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:counterMaxLength="6"
+            app:counterEnabled="true">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_property_pincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pin Code"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textColor="@color/lightBlack" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+<!--        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_ip_property_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_property_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Property Type"
+                android:inputType="text"
+                android:textColor="@color/lightBlack" />
+
+        </android.support.design.widget.TextInputLayout>-->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Property Type" />
+
+        <Spinner
+            android:id="@+id/spinner_property_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_ip_property_measure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_property_measure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Property Area (in sq. ft)"
+                android:inputType="number"
+                android:textColor="@color/lightBlack" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_btn"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="Submit Property Details"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_btn"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="@string/back_btn"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</ScrollView>

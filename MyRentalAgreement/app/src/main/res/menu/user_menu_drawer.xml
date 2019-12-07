@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/lbl_home" />
+
+        <item
+            android:id="@+id/nav_create_agreement"
+            android:icon="@drawable/create"
+            android:title="@string/lbl_create_agreement" />
+
+        <item
+            android:id="@+id/nav_view_agreement"
+            android:icon="@drawable/view_list"
+            android:title="@string/lbl_view_agreement" />
+
+        <item
+            android:id="@+id/nav_pending_agreement"
+            android:icon="@drawable/mode_edit"
+            android:title="@string/lbl_pending_agreement" />
+
+        <item
+            android:id="@+id/nav_my_account"
+            android:icon="@drawable/account_circle"
+            android:title="@string/lbl_my_account" />
+
+        <!--<item
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/notification"
+            android:title="@string/lbl_notification" />-->
+
+
+        <item
+            android:id="@+id/nav_about_us"
+            android:icon="@drawable/info"
+            android:title="@string/lbl_about_us" />
+
+       <!-- <item
+            android:id="@+id/our_services"
+            android:icon="@drawable/build"
+            android:title="@string/lbl_our_services" />-->
+
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/phone"
+            android:title="@string/lbl_contact" />
+
+        <!--<item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/settings"
+            android:title="@string/lbl_setting" />-->
+
+        <item
+            android:id="@+id/nav_rate_us"
+            android:icon="@drawable/ic_star_blue"
+            android:title="@string/lbl_rate_app" />
+
+        <item
+            android:id="@+id/nav_recommend_app"
+            android:icon="@drawable/share"
+            android:title="@string/lbl_recommend_app" />
+
+        <item
+            android:id="@+id/nav_social_media"
+            android:icon="@drawable/tap_and_play"
+            android:title="@string/lbl_social_media" />
+
+        <item
+            android:id="@+id/nav_legal_notice"
+            android:icon="@drawable/copyright"
+            android:title="@string/lbl_legal_notice" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/exit_to_app"
+            android:title="@string/lbl_logout" />
+    </group>
+
+</menu>

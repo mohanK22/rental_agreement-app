@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/scrollview_layout"
+    tools:context=".transaction.EditRentPaymentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/default_value">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_ip_rent_duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_rent_duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Rent Durantion (In Months)"
+                android:inputType="number"
+                android:textColor="@color/lightBlack" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_ip_refundable_deposit_amt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_refundable_deposit_amt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Refundable Deposit Amount"
+                android:inputType="number"
+                android:textColor="@color/lightBlack" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_ip_monthly_amt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_monthly_amt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Monthly Rent Amount"
+                android:inputType="number"
+                android:textColor="@color/lightBlack" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/txtViewRentType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Rent Type"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/rgRentType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdFixed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Fixed"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rdVariable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Variable"
+                android:textSize="16sp" />
+
+        </RadioGroup>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_ip_fixed_amt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_fixed_amt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Fixed Type Amount"
+                android:inputType="number"
+                android:textColor="@color/lightBlack" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <!--<android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_ip_variable_amt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_variable_amt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Variable Type Rent Amount"
+                android:inputType="number"
+                android:textColor="@color/lightBlack" />
+
+        </android.support.design.widget.TextInputLayout>-->
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_ip_variable_month1_amt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_variable_month1_amt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Month-1 Rent Amount"
+                android:inputType="number"
+                android:textColor="@color/lightBlack" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_ip_variable_month2_amt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_variable_month2_amt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Month-2 Rent Amount"
+                android:inputType="number"
+                android:textColor="@color/lightBlack" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_ip_variable_month3_amt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_variable_month3_amt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Month-3 Rent Amount"
+                android:inputType="number"
+                android:textColor="@color/lightBlack" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_ip_variable_month4_amt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_variable_month4_amt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Month-4 Rent Amount"
+                android:inputType="number"
+                android:textColor="@color/lightBlack" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_ip_variable_month5_amt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_variable_month5_amt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Month-5 Rent Amount"
+                android:inputType="number"
+                android:textColor="@color/lightBlack" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_ip_variable_month6_amt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_variable_month6_amt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Month-6 Rent Amount"
+                android:inputType="number"
+                android:textColor="@color/lightBlack" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_ip_variable_month7_amt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_variable_month7_amt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Month-7 Rent Amount"
+                android:inputType="number"
+                android:textColor="@color/lightBlack" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_ip_variable_month8_amt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_variable_month8_amt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Month-8 Rent Amount"
+                android:inputType="number"
+                android:textColor="@color/lightBlack" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_ip_variable_month9_amt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_variable_month9_amt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Month-9 Rent Amount"
+                android:inputType="number"
+                android:textColor="@color/lightBlack" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_ip_variable_month10_amt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_variable_month10_amt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Month-10 Rent Amount"
+                android:inputType="number"
+                android:textColor="@color/lightBlack" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_ip_variable_month11_amt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_variable_month11_amt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Month-11 Rent Amount"
+                android:inputType="number"
+                android:textColor="@color/lightBlack" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_ip_variable_month12_amt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_variable_month12_amt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Month-12 Rent Amount"
+                android:inputType="number"
+                android:textColor="@color/lightBlack" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/txtViewIsDepositAmtPaid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Is Deposit Amount Paid"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/rgDepositPaid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rdNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:checked="true"
+                android:text="No"
+                android:textSize="16sp" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/txtViewPaymentMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Mode of Payment"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/rgPaymentMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdCash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cash"
+                android:checked="true"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rdCheque"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Cheque"
+                android:textSize="16sp" />
+
+        </RadioGroup>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_ip_cash_dt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:focusable="false">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_cash_dt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cash Paid Date"
+                android:inputType="none"
+                android:clickable="true"
+                android:focusable="false"
+                android:textColor="@color/lightBlack" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_ip_chk_dt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_chq_dt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cheque Number"
+                android:inputType="number"
+                android:textColor="@color/lightBlack" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_ip_bank_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_bnk_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Bank Name"
+                android:inputType="text|textCapWords"
+                android:textColor="@color/lightBlack" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_ip_branch_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_branch_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Branch Name"
+                android:inputType="text|textCapWords"
+                android:textColor="@color/lightBlack" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_ip_chk_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:focusable="false">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_chq_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="false"
+                android:hint="Cheque Date"
+                android:inputType="none"
+                android:textColor="@color/lightBlack" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_ip_acc_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_acc_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Account No."
+                android:inputType="number"
+                android:textColor="@color/lightBlack" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Agreement Start / End Date"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_ip_agreement_start_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:focusable="false">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_agr_start_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="false"
+                android:hint="Start Date"
+                android:inputType="none"
+                android:textColor="@color/lightBlack" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_ip_agreement_end_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:focusable="false">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_agr_end_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="false"
+                android:hint="End Date"
+                android:inputType="none"
+                android:textColor="@color/lightBlack" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Courier service to mail document "
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/rgMailDocs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdMailDocYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rdMailDocNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:checked="true"
+                android:text="No"
+                android:textSize="16sp" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_btn"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="Update Rent Payment Details"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_btn"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="Next"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_btn"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="@string/back_btn"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</ScrollView>
